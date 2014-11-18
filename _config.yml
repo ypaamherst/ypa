@@ -1,0 +1,21 @@
+# Site settings
+title: Young Professionals of Amherst
+email: mjr@clearbold.com
+description: "Informational website for the Young Professionals of Amherst"
+baseurl: ""
+url: "http://amherstyoungprofessionals.org"
+twitter_username: tbd
+github_username:  clearbold
+
+# Where things are
+destination:      ./_site
+source:           .
+
+
+# Handling Reading
+exclude:           ["Gemfile", "Gemfile.lock", "README.md", "LICENSE"]
+
+# Conversion
+markdown: kramdown
+
+# $ bundle exec jekyll serve --watch

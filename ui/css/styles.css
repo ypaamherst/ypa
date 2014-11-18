@@ -1,0 +1,58 @@
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  zoom: 1; }
+
+.header {
+  background: #00526a;
+  padding-top: 30px; }
+
+.logo-top {
+  -moz-border-radius-topleft: 150px;
+  border-top-left-radius: 150px;
+  -moz-border-radius-topright: 150px;
+  border-top-right-radius: 150px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #FFFFFF;
+  color: #00526a;
+  font-size: 26px;
+  font-weight: bold;
+  height: 140px;
+  line-height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 280px; }
+
+.logo-bottom {
+  -moz-border-radius-bottomleft: 150px;
+  border-bottom-left-radius: 150px;
+  -moz-border-radius-bottomright: 150px;
+  border-bottom-right-radius: 150px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #00526a;
+  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: bold;
+  height: 140px;
+  line-height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 280px; }
+  .logo-bottom span {
+    font-family: Georgia, serif;
+    font-style: italic;
+    text-transform: lowercase; }
+
+/*# sourceMappingURL=styles.css.map */
