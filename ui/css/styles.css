@@ -20,16 +20,18 @@
   -moz-osx-font-smoothing: grayscale;
   background: #FFFFFF;
   color: #00526a;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
-  height: 140px;
+  height: 130px;
   line-height: 30px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 70px;
+  padding-top: 62px;
   text-align: center;
   text-transform: uppercase;
-  width: 280px; }
+  width: 260px; }
+  .logo-top span {
+    font-size: 26px; }
 
 .logo-bottom {
   -moz-border-radius-bottomleft: 150px;
@@ -40,18 +42,19 @@
   -moz-osx-font-smoothing: grayscale;
   background: #00526a;
   color: #FFFFFF;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
-  height: 140px;
+  height: 130px;
   line-height: 30px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 10px;
   text-align: center;
   text-transform: uppercase;
-  width: 280px; }
+  width: 260px; }
   .logo-bottom span {
     font-family: Georgia, serif;
+    font-size: 26px;
     font-style: italic;
     text-transform: lowercase; }
 
