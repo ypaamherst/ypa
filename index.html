@@ -1,3 +1,5 @@
+---
+---
 <!--[if i]><![endif]--><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +16,85 @@
     <meta name="robots" content="index,follow,archive" />
 </head>
 <body>
-<div class="header">
-    <div class="logo-top">Young<br /><span>Professionals</span></div>
-</div>
+    <div class="header">
+        <div class="logo-top">Young<br /><span>Professionals</span></div>
+    </div>
     <div class="logo-bottom"><span>of</span>&nbsp;Amherst</div>
 
+    <div class="events-outer">
+        <div class="events-inner">
+            <h2>Upcoming Events</h2>
+{% for event in site.data.events | limit: 3 | sort: 'timestamp' %}
+            <div class="event">
+                <h4 class="cal"><span class="month">{{ event.month }}</span> <span class="date">{{ event.date }}</span></h4>
+                <h4 class="time">{{ event.time }}</h4>
+{% if event.link != ""  %}
+                <h3><a href="{{ event.link }}">{{ event.event-name }}</a></h3>
+{% else %}
+                <h3>{{ event.event-name }}</h3>
+{% endif %}
+                <p>{{ event.location1 }}</p>
+                <p class="location">{{ event.location2 }}</p>
+            </div>
+{% endfor %}
+        </div>
+    </div>
+
+    <div class="mission-outer">
+        <div class="mission-inner">
+            <h2>Our Mission</h2>
+            <p>The mission of the Young Professionals of Amherst is to promote lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
+        </div>
+    </div>
+
+    <div class="benefits-outer">
+        <div class="benefits-inner">
+            <h2>Membership Benefits</h2>
+            <p>What does a $30 annual membership to YPA provide you?</p>
+            <div>
+                <ul>
+                    <li>Donec a diam lectus. Sed sit amet <a href="#">ipsum mauris</a>.</li>
+                    <li>Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</li>
+                    <li>Donec a diam lectus. Sed sit amet ipsum mauris.</li>
+                </ul>
+            </div>
+            <p>Contact <a href="#">email@somewhere.com</a> to join today!</p>
+        </div>
+    </div>
+
+    <div class="committee-outer">
+        <div class="committee-inner">
+            <h2>Executive Committee</h2>
+{% for member in site.data.exec-committee %}
+            <div>
+                <img src="{{ member.photo }}" />
+                <h4 class="name">{{ member.name }}</h4>
+                <h4>{{ member.position }}</h4></div>
+{% endfor %}
+        </div>
+    </div>
+
+    <div class="contact-outer">
+        <div class="contact-inner">
+            <h2>Get in Touch</h2>
+
+            <div>
+                <a href="#"><span class="icon icon-mail"></span><span class="visuallyhidden"> Email</span><p>address@email.com</a>
+            </div>
+            <div>
+                <a href="http://facebook.com/YPAmherst"><span class="icon icon-facebook"></span><span class="visuallyhidden"> Facebook</span><p>facebook.com/YPAmherst</p></a>
+            </div>
+            <div>
+                <a href="#"><span class="icon icon-twitter"></span><span class="visuallyhidden"> Twitter</span><p>@...</p></a>
+            </div>
+
+            <p class="clearbold">Designed &amp; Built by <a href="http://clearbold.com">Clearbold&nbsp;Digital&nbsp;know-how</a>.</p>
+        </div>
+    </div>
 </body>
 </html>
