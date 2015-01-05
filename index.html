@@ -26,7 +26,7 @@
             <h2>Upcoming Events</h2>
 {% for event in site.data.events | limit: 3 | sort: 'timestamp' %}
             <div class="event">
-                <h4 class="cal"><span class="month">{{ event.month }}</span> <span class="date">{{ event.date }}</span></h4>
+                <h4 class="cal"><span class="month">{{ event.month }}</span> <span class="date{% if event.date == "TBD" %} tbd{% endif %}">{{ event.date }}</span></h4>
                 <h4 class="time">{{ event.time }}</h4>
 {% if event.link != ""  %}
                 <h3><a href="{{ event.link }}">{{ event.event-name }}</a></h3>
@@ -43,7 +43,15 @@
     <div class="mission-outer">
         <div class="mission-inner">
             <h2>Our Mission</h2>
-            <p>The mission of the Young Professionals of Amherst is to promote lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
+            <p>Connecting Young Professionals in the Amherst area.</p>
+            <h3>Our Goals</h3>
+            <p>To help young professionals build both personal and professional relationships with&nbsp;one&nbsp;another.</p>
+
+            <p>To support community development making the Amherst area a more attractive place for young professionals, businesses&nbsp;and&nbsp;entrepreneurs.</p>
+
+            <p>To build community through raising awareness, working with community organizations&nbsp;and&nbsp;fundraising.</p>
+            <p>To have&nbsp;fun.</p>
+            <p><a href="YPA-Mission-ByLaws.docx">Download our Mission &amp; Bylaws</a></p>
         </div>
     </div>
 
@@ -53,17 +61,18 @@
             <p>What does a $30 annual membership to YPA provide you?</p>
             <div>
                 <ul>
-                    <li>Donec a diam lectus. Sed sit amet <a href="#">ipsum mauris</a>.</li>
-                    <li>Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</li>
+                    <li>You will be able to connect with other young professionals</li>
+                    <li>There will be organized afterhours networking events to help broaden both professional and personal relationships</li>
+                    <li>There will be organized unique events that highlight the area and all it has to offer</li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li>Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</li>
-                    <li>Donec a diam lectus. Sed sit amet ipsum mauris.</li>
+                    <li>You will be able to make a positive impact in the community through increasing business awareness in the area and help strengthen the local economy</li>
+                    <li>By being a member, you will be able to participate in promotions offered by various restaurants, organizations, local shops and entertainment offered exclusively to YPA members</li>
                 </ul>
             </div>
-            <p>Contact <a href="#">email@somewhere.com</a> to join today!</p>
+            <p>Contact <a href="mailto:youngprofessionalsamherst@gmail.com">youngprofessionalsamherst @&nbsp;gmail.com</a> to join today!</p>
         </div>
     </div>
 
@@ -74,7 +83,10 @@
             <div>
                 <img src="{{ member.photo }}" />
                 <h4 class="name">{{ member.name }}</h4>
-                <h4>{{ member.position }}</h4></div>
+                <h4 class="position">{{ member.position }}</h4>
+                <h4 class="profession">{{ member.profession }}</h4>
+                <p>{{ member.phone }} / <a href="mailto:{{ member.email }}">Email</a></p>
+            </div>
 {% endfor %}
         </div>
     </div>
@@ -84,13 +96,13 @@
             <h2>Get in Touch</h2>
 
             <div>
-                <a href="#"><span class="icon icon-mail"></span><span class="visuallyhidden"> Email</span><p>address@email.com</a>
+                <a href="mailto:youngprofessionalsamherst@gmail.com"><span class="icon icon-mail"></span><span class="visuallyhidden"> Email</span><p>youngprofessionalsamherst @&nbsp;gmail.com</a>
             </div>
             <div>
                 <a href="http://facebook.com/YPAmherst"><span class="icon icon-facebook"></span><span class="visuallyhidden"> Facebook</span><p>facebook.com/YPAmherst</p></a>
             </div>
             <div>
-                <a href="#"><span class="icon icon-twitter"></span><span class="visuallyhidden"> Twitter</span><p>@...</p></a>
+                <a href="http://twitter.com/ypaamherst"><span class="icon icon-twitter"></span><span class="visuallyhidden"> Twitter</span><p>@ypaamherst</p></a>
             </div>
 
             <p class="clearbold">Designed &amp; Built by <a href="http://clearbold.com">Clearbold&nbsp;Digital&nbsp;know-how</a>.</p>

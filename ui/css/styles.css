@@ -65,7 +65,8 @@ h3 {
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #111; }
+  color: #111;
+  text-align: center; }
 
 h4 {
   -webkit-font-smoothing: antialiased;
@@ -208,6 +209,8 @@ li {
         display: block;
         padding-top: 15px;
         padding-bottom: 15px; }
+      .events-inner .event .tbd {
+        font-size: 24px; }
       .events-inner .event h4.time {
         font-size: 12px;
         line-height: 1.2em;
@@ -252,9 +255,13 @@ li {
 .mission-inner h2 {
   font-family: Georgia, serif;
   margin-bottom: 20px; }
+.mission-inner h3 {
+  font-family: Georgia, serif;
+  margin-bottom: 20px; }
 .mission-inner p {
   font-family: Georgia, serif;
   margin-right: auto;
+  margin-bottom: 20px;
   margin-left: auto;
   max-width: 720px;
   text-align: center; }
@@ -297,13 +304,22 @@ li {
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+    position: relative;
     text-align: left;
+    vertical-align: top;
     width: 200px; }
     .committee-inner div h4.name {
       font-family: Georgia, serif; }
+    .committee-inner div h4.position {
+      margin-bottom: 10px; }
+    .committee-inner div h4.profession {
+      font-size: 14px;
+      margin-bottom: 10px; }
+    .committee-inner div p {
+      font-size: 12px; }
 
 .contact-inner div {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   padding-right: 20px;
   padding-left: 20px;
   text-align: center; }

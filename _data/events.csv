@@ -1,4 +1,7 @@
 "timestamp","month","date","time","event-name","location1","location2","link"
+"20140115","January","15","5:00pm","Kickoff Event","Amherst Brewing Company","10 University Drive","http://www.amherstbrewing.com/"
+"20140201","February","TBD","TBD","Social Event","Interskate 91","Hampshire Mall","http://interskate91.com/north/"
+"20140301","March","TBD","TBD","Afterhours Event","The Pub","15 East Pleasant Street, Amherst","http://www.amherstpub.com/"
 "20141215","December","15","5:00pm","Social Event That Has Longer Text Than We Might Expect","Bistro 63 at the Monkey Bar","63 N Amherst Street",""
 "20150115","January","15","10:30am - 11:00am","Executive Meeting That Has Longer Text Than We Might Expect","Amherst Board Room","Lord Jeffrey Inn",""
 "20150115","February","15","5:00pm","Social Event","Bistro 63 at the Monkey Bar","63 N Amherst Street","#"

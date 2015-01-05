@@ -117,6 +117,7 @@ h2 {
 h3 {
     @include font-smoothing;
     color: #111;
+    text-align: center;
 }
 h4 {
     @include font-smoothing;
@@ -260,6 +261,9 @@ li {
                 padding-top: 15px;
                 padding-bottom: 15px;
             }
+                .tbd {
+                    font-size: 24px;
+                }
             h4.time {
                 font-size: 12px;
                 line-height: 1.2em;
@@ -319,9 +323,14 @@ li {
         font-family: Georgia, serif;
         margin-bottom: 20px;
     }
+    h3 {
+        font-family: Georgia, serif;
+        margin-bottom: 20px;
+    }
     p {
         font-family: Georgia, serif;
         margin-right: auto;
+        margin-bottom: 20px;
         margin-left: auto;
         max-width: 720px;
         text-align: center;
@@ -376,10 +385,24 @@ li {
         padding-right: 10px;
         padding-bottom: 10px;
         padding-left: 10px;
+        position: relative;
         text-align: left;
+        vertical-align: top;
         width: 200px;
         h4.name {
             font-family: Georgia, serif;
+        }
+        h4.position {
+            margin-bottom: 10px;
+        }
+        h4.profession {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 12px;
+        }
+        @include mq(320px) {
         }
     }
 }
@@ -391,7 +414,7 @@ li {
     @extend .wrapper-inner;
 
     div {
-        margin-bottom: 40px;
+        margin-bottom: 80px;
         padding-right: 20px;
         padding-left: 20px;
         text-align: center;
