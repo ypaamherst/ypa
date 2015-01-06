@@ -40,6 +40,10 @@ If you go back to the main file list and click on `index.html`, you'll see the H
 
 Clicking the pencil icon will let you edit any of the content here. Some of the content here is matched up to specific formatting styles that might need a little intervention, but you can certainly make tweaks here.
 
+**One note on making edits via GitHub:** It may take a moment or two for them to show up on the site, because GitHub has to re-generate the site following committed edits. You might also need to force a refresh in your browser, where a simple HTML site is more aggressively cached.
+
+***
+
 You can email me with any questions, or, if you think we'd benefit from documenting a question and solution, click the Issues link on the main screen (over to the right) and post it to me there.
 
 Enjoy!
